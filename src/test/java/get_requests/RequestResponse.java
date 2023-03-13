@@ -2,8 +2,7 @@ package get_requests;
 
 import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.get;
-import static io.restassured.RestAssured.post;
+import static io.restassured.RestAssured.*;
 
 public class RequestResponse {
     /*
@@ -26,7 +25,7 @@ public class RequestResponse {
 
     public static void main(String[] args) {
         // Get request nasıl yapılır :
-        Response response = get("https://restful-booker.herokuapp.com/booking/198");
+        Response response = given().when().get("https://restful-booker.herokuapp.com/booking/198");
         response.prettyPrint();//prettyPrint() methodu reponse datayı Json formatında yazdırır.
        //Status Code Yazdırma:
         System.out.println("Status Code :"+response.statusCode());
