@@ -53,7 +53,7 @@ public class Post01 extends JsonPlaceHolderBaseUrl {
         */
 
         Map<String , Object> expectedData = new HashMap<>();
-        expectedData.put("userId",55);
+        expectedData.put("userId",55.0);
         expectedData.put("title","Tidy your room");
         expectedData.put("completed",false);
         expectedData.put("id",201);
@@ -73,14 +73,15 @@ public class Post01 extends JsonPlaceHolderBaseUrl {
         //Status code is 201
         assertEquals(201,response.statusCode());
 
-        Map<String,Object> actualData = response.as(HashMap.class); //DE-Serialization ==> Json dilinden Javaya çeviren method Json to Java
+        Map<String,Object> actualData = response.as(HashMap.class); //response.as()-> DE-Serialization ==> Json dilinden Javaya çeviren method Json to Java
         System.out.println("actual Data : "+actualData);
-         Integer userid =Integer.valueOf(actualData.get("userId").toString().replace(".0",""));
+
         //burada assertion yapmak için jsondan gelenleri mape çevirdik.
         assertEquals(expectedData.get("completed"),actualData.get("completed"));
         assertEquals(expectedData.get("title"),actualData.get("title"));
-        assertEquals(expectedData.get("userId"),userid);
+        assertEquals(expectedData.get("userId"), actualData.get("userId"));
 
 
     }
+
 }
