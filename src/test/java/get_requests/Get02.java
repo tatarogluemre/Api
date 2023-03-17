@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
 
-public class Get_Test_02 {
+public class Get02 {
 
     /*
         Given

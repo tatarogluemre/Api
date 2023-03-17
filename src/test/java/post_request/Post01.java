@@ -53,7 +53,7 @@ public class Post01 extends JsonPlaceHolderBaseUrl {
         */
 
         Map<String , Object> expectedData = new HashMap<>();
-        expectedData.put("userId",55.0);
+        expectedData.put("userId",55);
         expectedData.put("title","Tidy your room");
         expectedData.put("completed",false);
         expectedData.put("id",201);

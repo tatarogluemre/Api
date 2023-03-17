@@ -7,7 +7,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertTrue;
 
-public class Get_Test_05 extends HerOkuAppBaseUrl {
+public class Get05 extends HerOkuAppBaseUrl {
 
    /*
         Given

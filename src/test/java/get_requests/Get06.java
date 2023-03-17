@@ -11,7 +11,7 @@ import org.testng.asserts.SoftAssert;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class Get_Test_06 extends HerOkuAppBaseUrl {
+public class Get06 extends HerOkuAppBaseUrl {
 /*
         Given
             https://restful-booker.herokuapp.com/booking/23

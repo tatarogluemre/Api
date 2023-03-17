@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class Get_Test_03 {
+public class Get03 {
 /*
 
 

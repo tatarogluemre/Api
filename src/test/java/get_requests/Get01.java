@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.get;
 
-public class Get_Test_01 {
+public class Get01 {
 
 //        Given
 //            https://restful-booker.herokuapp.com/booking/55
