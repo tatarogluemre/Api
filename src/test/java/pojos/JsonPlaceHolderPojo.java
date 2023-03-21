@@ -1,7 +1,7 @@
 package pojos;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)//response sonucu gelen data uyuşmaması durumunda ignore etmesi Exception atmaması için kullandık.
 public class JsonPlaceHolderPojo {
