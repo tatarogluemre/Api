@@ -1,7 +1,9 @@
 package gmibank.pojos;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.util.ArrayList;
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Customer {
     private int id;
     private String firstName;
